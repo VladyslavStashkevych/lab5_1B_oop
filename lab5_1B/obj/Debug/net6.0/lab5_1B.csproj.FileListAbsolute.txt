@@ -1,0 +1,15 @@
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\bin\Debug\net6.0\lab5_1B.exe
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\bin\Debug\net6.0\lab5_1B.deps.json
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\bin\Debug\net6.0\lab5_1B.runtimeconfig.json
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\bin\Debug\net6.0\lab5_1B.dll
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\bin\Debug\net6.0\lab5_1B.pdb
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\obj\Debug\net6.0\lab5_1B.csproj.AssemblyReference.cache
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\obj\Debug\net6.0\lab5_1B.GeneratedMSBuildEditorConfig.editorconfig
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\obj\Debug\net6.0\lab5_1B.AssemblyInfoInputs.cache
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\obj\Debug\net6.0\lab5_1B.AssemblyInfo.cs
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\obj\Debug\net6.0\lab5_1B.csproj.CoreCompileInputs.cache
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\obj\Debug\net6.0\lab5_1B.dll
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\obj\Debug\net6.0\refint\lab5_1B.dll
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\obj\Debug\net6.0\lab5_1B.pdb
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\obj\Debug\net6.0\lab5_1B.genruntimeconfig.cache
+C:\TEMPORARY\oop\lab5_1B\lab5_1B\obj\Debug\net6.0\ref\lab5_1B.dll
