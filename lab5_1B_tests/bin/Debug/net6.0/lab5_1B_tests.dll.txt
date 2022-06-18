@@ -1,0 +1,3 @@
+lab5_1B_tests.UnitTest1.Method_Add_ReturnsCorrectValue
+lab5_1B_tests.UnitTest1.Method_Substact_ReturnsCorrectValue
+lab5_1B_tests.UnitTest1.Method_Scalar_ReturnsCorrectValue

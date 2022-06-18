@@ -1,6 +1,11 @@
 ﻿// VectorN.cs
 
 namespace lab5_1B {
+	public class MyException : Exception {
+		private string message;
+		public MyException(string message) => this.message = message;
+		public string What() => message;
+	}
 	public class VectorN {
 		int n;
 		double[] a;
@@ -12,8 +17,8 @@ namespace lab5_1B {
 					n = value;
 					A = new double[n];
 				}
-				else 
-					throw new ArgumentOutOfRangeException("Size should be greater than zero!");
+				else
+					throw new MyException("number should be greater than zero!");
 			}
 		}
 		public double[] A { get => a; set => a = value; }
@@ -25,12 +30,12 @@ namespace lab5_1B {
 		public VectorN(int n, double[] a) {
 			try {
 				this.N = n;
-				for(int i = 0; i< N; i++) {
+				for(int i = 0; i < N; i++) {
 					this.A[i] = a[i];
 				}
 			}
-			catch (ArgumentOutOfRangeException ex) {
-				System.Console.WriteLine(ex.ParamName);
+			catch (MyException ex) {
+				System.Console.WriteLine(ex.What());
 			}
 		}
 		public VectorN(VectorN v) {
@@ -53,7 +58,7 @@ namespace lab5_1B {
 			try {
 				VectorN result = new VectorN();
 				if (v1.N != v2.N) {
-					throw new ArgumentException("Vectors should have same size");
+					throw new MyException("Vectors should have same size");
 				}
 				result.N = v1.N;
 				for (int i = 0; i < v1.N; i++) {
@@ -61,8 +66,8 @@ namespace lab5_1B {
 				}
 				return result;
 			}
-			catch (ArgumentException ex) {
-				System.Console.WriteLine(ex.ParamName);
+			catch (MyException ex) {
+				System.Console.WriteLine(ex.What());
 				return new VectorN();
 			}
 		}
@@ -87,15 +92,15 @@ namespace lab5_1B {
 			try {
 				double result = 0;
 				if (v1.N != v2.N) {
-					throw new ArgumentException("Vectors should have same size");
+					throw new MyException("Vectors should have same size");
 				}
 				for (int i = 0; i < v1.N; i++) {
 					result += v1.A[i] * v2.A[i];
 				}
 				return result;
 			}
-			catch (ArgumentException ex) {
-				System.Console.WriteLine(ex.ParamName);
+			catch (MyException ex) {
+				System.Console.WriteLine(ex.What());
 				return 0;
 			}
 		}
@@ -132,7 +137,7 @@ namespace lab5_1B {
                 Console.Write("Enter number of elements: ");
                 int num = Convert.ToInt32(Console.ReadLine());
                 if (num < 0) {
-                    throw new ArgumentOutOfRangeException("Number of elements should be greater than zero!\nPlease, try again");
+                    throw new MyException("Number of elements should be greater than zero!\nPlease, try again");
                 }
                 else {
                     double[] arr = new double[num];
@@ -145,8 +150,8 @@ namespace lab5_1B {
                     this.A = arr;
 				}
 			}
-			catch (ArgumentOutOfRangeException ex) {
-				System.Console.WriteLine(ex.ParamName);
+			catch (MyException ex) {
+				System.Console.WriteLine(ex.What());
 				this.Read();
 			}
 		}
